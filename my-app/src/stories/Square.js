@@ -15,11 +15,10 @@ export const Square = ({className, label, ...props}) => {
 
 Square.propTypes = {
     className: PropTypes.string,
-    label: PropTypes.string.isRequired,
-    xIsNext: PropTypes.bool,
+    label: PropTypes.oneOf(['', '○', 'O', 'X', '△']),
 };
 
 Square.defaultProps = {
     className: 'square',
-    xIsNext: true,
+    label: '',
 };

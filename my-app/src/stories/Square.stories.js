@@ -14,15 +14,3 @@ circle.args = {
     className: 'square',
     label:'○',
 };
-
-export const cross = Template.bind({});
-cross.args = {
-    square: 'square',
-    label: 'X',
-}
-
-export const triangle = Template.bind({});
-triangle.args = {
-    square: 'square',
-    label: '△',
-}
