@@ -1,0 +1,4 @@
+// Storyshots.test.js
+
+import initStoryshots from '@storybook/addon-storyshots';
+initStoryshots();
