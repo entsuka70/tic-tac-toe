@@ -12,5 +12,5 @@ const Template = (args) => <Square {...args} />;
 export const circle = Template.bind({});
 circle.args = {
     className: 'square',
-    label:'○',
+    label:'丁',
 };

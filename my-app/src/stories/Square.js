@@ -15,7 +15,7 @@ export const Square = ({className, label, ...props}) => {
 
 Square.propTypes = {
     className: PropTypes.string,
-    label: PropTypes.oneOf(['', '○', 'O', 'X', '△']),
+    label: PropTypes.oneOf(['', '○', 'O', 'X', '△', '丁']),
 };
 
 Square.defaultProps = {
