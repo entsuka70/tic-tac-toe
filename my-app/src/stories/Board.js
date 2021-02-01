@@ -10,6 +10,7 @@ export const Board = ({classBoard, classSquare, value}) => {
                 {<Square className={classSquare} label={value}/>}
                 {<Square className={classSquare} label={value}/>}
                 {<Square className={classSquare} label={value}/>}
+                {<Square className={classSquare} label={value}/>}
             </div>
             <div className={classBoard}>
                 {<Square className={classSquare} label={value}/>}
