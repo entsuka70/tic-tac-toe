@@ -93,9 +93,11 @@ import './index.css';
         let status;
         if (winner) {
             status = 'Winner: ' + winner;
+        } else if (history.length === 10) {
+            status = ' DRAW !!'
         } else {
             status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
-        }
+        } 
       return (
         <div className="game">
           <div className="game-board">
