@@ -94,7 +94,7 @@ import './index.css';
         if (winner) {
             status = 'Winner: ' + winner;
         } else if (history.length === 10) {
-            status = ' DRAW !!'
+            status = 'DRAW !!'
         } else {
             status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
         } 

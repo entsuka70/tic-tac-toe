@@ -19,4 +19,19 @@ describe('Test tic-tac-toe', () => {
     it('Check the Winner', () => {
         cy.get('.status').should('have.text', 'Winner: X');
     });
+    it('Click Go to game start', () => {
+        cy.get('.game-info').children('ol').children('li').eq(0).should('have.text', 'Go to game start');
+        cy.get('.game-info').children('ol').children('li').eq(0).click();
+        cy.get('.square').eq(0).click();
+        cy.get('.square').eq(1).click();
+        cy.get('.square').eq(3).click();
+        cy.get('.square').eq(4).click();
+        cy.get('.square').eq(7).click();
+        cy.get('.square').eq(6).click();
+        cy.get('.square').eq(2).click();
+        cy.get('.square').eq(5).click();
+        cy.get('.square').eq(8).click();
+        cy.get('.status').should('have.text', 'DRAW !!');
+        cy.get
+    });
 });
