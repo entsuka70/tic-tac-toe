@@ -3,4 +3,5 @@
 import initStoryshots from '@storybook/addon-storyshots';
 import {imageSnapshot, puppeteerTest} from '@storybook/addon-storyshots-puppeteer';
 
-initStoryshots({suite:'Image storyshots', test: imageSnapshot()});
+initStoryshots(); // スナップショットテスト
+// initStoryshots({suite:'Image storyshots', test: imageSnapshot()}); // ビジュアル・リグレッションテスト

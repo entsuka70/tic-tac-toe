@@ -9,7 +9,7 @@ export const Game = ({classGame, classGameBoard, values, classInfo, classStatus,
             'Go to move #' + move:
             'Go to game start';
         return (
-            <li>
+            <li key={move}>
                 <button>{desc}</button>
             </li>
         )
